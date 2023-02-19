@@ -1,22 +1,11 @@
-/*const a = 5;
-const b = 2;
-const result = a + b;
+let value = null;
 
-switch (result) {
-    case 0:
-        console.log('результат равен 0');
-        break;
-    case 1:
-        console.log('результат равен 1');
-        break;
-    case 2:
-        console.log('результат равен 2');
-        break;
-    case 3:
-        console.log('результат равен 3');
-        break;
-    default:
-        console.log('результат не равен числам 1,2,3');
-}*/
-
-
+if (typeof value === "number") {
+    console.log(value + ' - число');
+} else if (typeof value === "string") {
+    console.log(value + ' - строка');
+} else if (typeof value === "boolean") {
+    console.log(value + ' - логический тип');
+} else {
+    console.log('Тип ' + value + ' не определен');
+}
