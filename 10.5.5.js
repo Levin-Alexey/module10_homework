@@ -1,4 +1,4 @@
-let arrAnimals = ['lynx', 'lion', 'panther', 'cheetah', 'leopard',];
+let arrAnimals = ['leopard','leopard', 'leopard'];
 //Вывод длины массива
 console.log(arrAnimals.length);
 
@@ -6,7 +6,7 @@ console.log(arrAnimals.length);
 arrAnimals.forEach(element => console.log(element));
 
 //Сравнение при помощи цикла
-let result;
+let result = true;
 for (let i = 0; i < arrAnimals.length - 1; i++) {
     if (arrAnimals[i] !== arrAnimals[i + 1]) {
         result = false
@@ -15,14 +15,4 @@ for (let i = 0; i < arrAnimals.length - 1; i++) {
 console.log(result)
 
 
-// сравнение при помощи Set (удаляем повторные элементы и сравниваем массивы)
-let arrAnimalsSet = new Set(arrAnimals)
-
-let arrAnimalsSetToArray = Array.from(arrAnimalsSet);
-
-if (JSON.stringify(arrAnimals) == JSON.stringify(arrAnimalsSetToArray)) {
-    console.log(true)
-} else {
-    console.log(false)
-}
 
